@@ -9,6 +9,8 @@
   --dark-font-color: #1B1A1A;
   --medium-font-color: #403E3B;
   --light-font-color: #645C55;
+  --white-font-color: #FFFFFF;
+  --gray-font-color: #ECE7E4;
 }
 
 html {
@@ -71,6 +73,9 @@ a {
     font-size: 60px;
     font-weight: 400;
     line-height: 1.2;
+  }
+  &__description {
+    color: var(--medium-font-color);
   }
   &__button {
     color: var(--dark-font-color);
@@ -153,12 +158,16 @@ a {
   }
   &__caption {
     font-size: 16px;
-    color: var(--medium-font-color);
+    color: var(--light-font-color);
+  }
+  &__caption-container--left {
+    left: 100px;
   }
 }
 
 .about-process {
   width: 100%;
+  padding-block: 6vw;
 
   &__container {
     display: flex;
@@ -177,9 +186,10 @@ a {
   }
   &__steps {
     width: 70vw;
-    border: red 1px solid;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vw;
+    margin-top: 3vw;
   }
 }
 
@@ -193,7 +203,48 @@ a {
     color: var(--medium-font-color);
   }
   &__description {
+    text-align: center;
     font-size: 16px;
     color: var(--light-font-color);
+  }
+}
+
+.customers {
+  width: 100%;
+  padding: 7vw 9vw;
+  background-color: #403E3B;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__pre-title {
+    font-size: 14px;
+    color: var(--gray-font-color);
+  }
+  &__title {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--white-font-color);
+  }
+  &__description {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--gray-font-color);
+    max-width: 80%;
+  }
+  &__logos {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    place-items: center;
+    grid-row-gap: 60px;
+  }
+  &__logo {
+
   }
 }
