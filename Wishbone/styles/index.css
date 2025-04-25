@@ -211,6 +211,7 @@ svg * {
   --light-font-color: #645C55;
   --white-font-color: #FFFFFF;
   --gray-font-color: #ECE7E4;
+  --transition-duration: .2s;
 }
 
 html {
@@ -438,6 +439,89 @@ a {
   grid-template: 1fr 1fr/1fr 1fr;
   place-items: center;
   grid-row-gap: 60px;
+}
+
+.featured-projects {
+  width: 100%;
+  padding: 7vw 9vw;
+}
+.featured-projects__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.featured-projects__title {
+  font-size: 39px;
+  color: var(--dark-font-color);
+  font-weight: 400;
+}
+.featured-projects__description {
+  font-size: 24px;
+  color: var(--medium-font-color);
+  max-width: 50%;
+}
+.featured-projects__cards {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.featured-projects__view-all-button {
+  color: var(--dark-font-color);
+  font-size: 16px;
+  margin-top: 4vw;
+  margin-inline: auto;
+}
+
+.project-card {
+  position: relative;
+}
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+}
+.project-card:hover .project-card__title {
+  translate: 0 10px;
+}
+.project-card:hover .project-card__place {
+  translate: 0 10px;
+}
+.project-card:hover .project-card__button {
+  translate: 0 -10px;
+}
+.project-card__overlay {
+  position: absolute;
+  left: 3vw;
+  top: 2vw;
+  bottom: 2vw;
+  right: 3vw;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition-duration: var(--transition-duration);
+}
+.project-card__place {
+  font-size: 14px;
+  color: var(--light-font-color);
+  transition-duration: var(--transition-duration);
+}
+.project-card__title {
+  font-size: 23px;
+  color: var(--medium-font-color);
+  transition-duration: var(--transition-duration);
+}
+.project-card__button {
+  width: 130px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  margin-top: auto;
+  color: var(--white-font-color);
+  font-size: 16px;
+  background-color: #1B1A1A;
+  border-radius: 14px;
+  transition-duration: var(--transition-duration);
 }
 
 /*# sourceMappingURL=index.css.map */
