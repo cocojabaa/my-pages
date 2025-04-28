@@ -5,6 +5,12 @@
   font-display: swap;
 }
 
+@mixin text-style($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+  font-weight: 400;
+}
+
 :root {;
   --dark-font-color: #1B1A1A;
   --medium-font-color: #403E3B;
@@ -13,6 +19,7 @@
   --gray-font-color: #ECE7E4;
 
   --transition-duration: .2s;
+  --scale: 1.05;
 }
 
 html {
@@ -57,9 +64,7 @@ a {
     align-items: center;
   }
   &__button {
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--dark-font-color);
+    @include text-style(16px, var(--dark-font-color));
   }
   &__button--filled {
     display: flex;
@@ -68,13 +73,12 @@ a {
     position: relative;
     background-color: var(--dark-font-color);
     color: white;
-    height: 46px;
-    width: 155px;
+    padding: 10px 15px;
     border-radius: 14px;
     transition-duration: var(--transition-duration);
 
     &:hover {
-      transform: scale(1.05);
+      transform: scale(var(--scale));
     }
   }
 }
@@ -96,21 +100,18 @@ a {
     min-height: 100%;
   }
   &-pre-title {
-    color: var(--light-font-color);
-    font-size: 14px;
+    @include text-style(14px, var(--light-font-color));
     letter-spacing: 3px;
   }
   &-title {
-    font-size: 60px;
-    font-weight: 400;
+    @include text-style(60px, var(--dark-font-color));
     line-height: 1.2;
   }
   &__description {
-    color: var(--medium-font-color);
+    @include text-style(16px, var(--medium-font-color));
   }
   &__button {
-    color: var(--dark-font-color);
-    display: inline;
+    @include text-style(16px, var(--dark-font-color));
   }
   &-image {
     width: auto;
@@ -132,20 +133,17 @@ a {
     padding-right: 1vw;
   }
   &__title {
+    @include text-style(32px, var(--medium-font-color));
     min-width: 0;
-    font-size: 32px;
-    color: var(--medium-font-color);
-    font-weight: 400;
   }
-  &__text {
+  &__info {
     display: flex;
     flex-direction: column;
     gap: 2vw;
   }
-  &__para {
+  &__text {
+    @include text-style(16px, var(--medium-font-color));
     min-width: 0;
-    font-size: 16px;
-    color: var(--medium-font-color);
   }
 }
 
@@ -160,12 +158,10 @@ a {
     justify-content: center;
   }
   &__name {
-    font-size: 17px;
-    color: var(--dark-font-color);
+    @include text-style(17px, var(--dark-font-color));
   }
   &__position {
-    font-size: 14px;
-    color: var(--light-font-color);
+    @include text-style(14px, var(--light-font-color));
   }
 }
 
@@ -187,12 +183,10 @@ a {
     letter-spacing: 1px;
   }
   &__caption-title {
-    font-size: 14px;
-    color: var(--medium-font-color);
+    @include text-style(14px, var(--medium-font-color));
   }
   &__caption {
-    font-size: 16px;
-    color: var(--light-font-color);
+    @include text-style(16px, var(--light-font-color));
   }
   &__caption-container--left {
     left: 100px;
@@ -209,14 +203,11 @@ a {
     align-items: center;
   }
   &__pre-title {
-    font-size: 14px;
-    color: var(--light-font-color);
+    @include text-style(14px, var(--light-font-color));
     letter-spacing: 2px;
   }
   &__title {
-    font-size: 39px;
-    font-weight: 400;
-    color: var(--dark-font-color);
+    @include text-style(39px, var(--dark-font-color));
   }
   &__steps {
     width: 70vw;
@@ -233,13 +224,11 @@ a {
   align-items: center;
   gap: 15px;
   &__title {
-    font-size: 18px;
-    color: var(--medium-font-color);
+    @include text-style(18px, var(--medium-font-color));
   }
   &__description {
+    @include text-style(16px, var(--light-font-color));
     text-align: center;
-    font-size: 16px;
-    color: var(--light-font-color);
   }
 }
 
@@ -258,18 +247,14 @@ a {
     justify-content: center;
   }
   &__pre-title {
-    font-size: 14px;
-    color: var(--gray-font-color);
+    @include text-style(14px, var(--gray-font-color));
   }
   &__title {
-    font-size: 32px;
-    font-weight: 400;
-    color: var(--white-font-color);
+    @include text-style(32px, var(--white-font-color));
   }
   &__description {
+    @include text-style(14px, var(--gray-font-color));
     margin-top: 15px;
-    font-size: 14px;
-    color: var(--gray-font-color);
     max-width: 80%;
   }
   &__logos {
@@ -291,13 +276,10 @@ a {
     align-items: flex-start;
   }
   &__title {
-    font-size: 39px;
-    color: var(--dark-font-color);
-    font-weight: 400;
+    @include text-style(39px, var(--dark-font-color));
   }
   &__description {
-    font-size: 24px;
-    color: var(--medium-font-color);
+    @include text-style(24px, var(--medium-font-color));
     max-width: 50%;
   }
   &__cards {
@@ -307,8 +289,7 @@ a {
     width: 100%;
   }
   &__view-all-button {
-    color: var(--dark-font-color);
-    font-size: 16px;
+    @include text-style(16px, var(--dark-font-color));
     margin-top: 4vw;
     margin-inline: auto;
   }
@@ -342,32 +323,33 @@ a {
     right: 3vw;
     display: flex;
     flex-direction: column;
-    align-items: start; // Чтобы кнопка не растягивалась на всю ширину
+    align-items: start;
     opacity: 0;
     transition-duration: var(--transition-duration);
   }
   &__place {
-    font-size: 14px;
-    color: var(--light-font-color);
+    @include text-style(14px, var(--light-font-color));
     transition-duration: var(--transition-duration);
   }
   &__title {
-    font-size: 23px;
-    color: var(--medium-font-color);
+    @include text-style(23px, var(--medium-font-color));
     transition-duration: var(--transition-duration);
   }
   &__button {
+    @include text-style(16px, var(--white-font-color));
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1vw;
     margin-top: auto;
-    color: var(--white-font-color);
-    font-size: 16px;
     background-color: #1B1A1A;
     border-radius: 14px;
     transition-duration: var(--transition-duration);
+
+    &:hover {
+      transform: scale(var(--scale));
+    }
   }
 }
 
@@ -386,20 +368,16 @@ a {
     row-gap: 3vw;
   }
   &__title {
-    font-size: 32px;
-    font-weight: 400;
-    color: var(--medium-font-color);
+    @include text-style(32px, var(--medium-font-color));
   }
   &__description {
+    @include text-style(15px, var(--light-font-color));
     margin-top: 1vw;
-    font-size: 15px;
-    color: var(--light-font-color);
   }
   &__button {
+    @include text-style(16px, var(--dark-font-color));
     margin-top: 3vw;
     margin-left: 2vw;
-    color: var(--black-font-color);
-    font-size: 16px;
   }
 
 }
@@ -414,19 +392,15 @@ a {
     align-items: center;
   }
   &__pre-title {
-    font-size: 14px;
-    color: var(--light-font-color);
+    @include text-style(14px, var(--light-font-color));
   }
   &__title {
+    @include text-style(40px, var(--dark-font-color));
     margin-top: -1vw;
-    font-size: 40px;
-    color: var(--black-font-color);
-    font-weight: 400;
     max-width: 70%;
   }
   &__button {
-    color: var(--black-font-color);
-    font-size: 16px;
+    @include text-style(16px, var(--dark-font-color));
   }
 
 }
@@ -441,13 +415,19 @@ a {
     align-items: end;
   }
   &__description {
+    @include text-style(14px, var(--light-font-color));
     margin-top: 1.5vw;
     line-height: 1;
-    font-size: 14px;
-    color: var(--light-font-color);
   }
   &__buttons {
     display: flex;
     gap: 2vw;
   }
+  &__button {
+    transition-duration: var(--transition-duration);
+    &:hover {
+      transform: scale(var(--scale)) rotate(10deg) translateY(-3px);
+    }
+  }
+
 }
