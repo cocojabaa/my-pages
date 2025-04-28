@@ -32,6 +32,7 @@ a {
 
 .a-button-hover {
   position: relative;
+
   &:after {
     content: '';
     bottom: -5px;
@@ -43,13 +44,16 @@ a {
     background: linear-gradient(to right, transparent, #1B1A1A, transparent);
     transition-duration: var(--transition-duration);
   }
-  &:hover {
-    &:after {
-      left: 0;
-      width: 100%;
-      transform: scaleX(1);
+  @media (hover: hover) {
+    &:hover {
+      &:after {
+        left: 0;
+        width: 100%;
+        transform: scaleX(1);
+      }
     }
   }
+
 }
 
 .header {
@@ -77,14 +81,17 @@ a {
     border-radius: 14px;
     transition-duration: var(--transition-duration);
 
-    &:hover {
-      transform: scale(var(--scale));
+    @media(hover: hover) {
+      &:hover {
+        transform: scale(var(--scale));
+      }
     }
   }
 }
 
 .hero {
   display: flex;
+  overflow: clip;
 
   &-info {
     display: flex;
@@ -347,8 +354,10 @@ a {
     border-radius: 14px;
     transition-duration: var(--transition-duration);
 
-    &:hover {
-      transform: scale(var(--scale));
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(var(--scale));
+      }
     }
   }
 }
