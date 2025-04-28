@@ -25,6 +25,7 @@
 html {
   font-family: 'Poppins', sans-serif;
   letter-spacing: .5px;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
@@ -68,7 +69,7 @@ a {
     align-items: center;
   }
   &__button {
-    @include text-style(16px, var(--dark-font-color));
+    @include text-style(1rem, var(--dark-font-color));
   }
   &__button--filled {
     display: flex;
@@ -77,7 +78,7 @@ a {
     position: relative;
     background-color: var(--dark-font-color);
     color: white;
-    padding: 10px 15px;
+    padding: .8rem 1rem;
     border-radius: 14px;
     transition-duration: var(--transition-duration);
 
@@ -93,7 +94,7 @@ a {
   display: flex;
   overflow: clip;
 
-  &-info {
+  &__info {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -106,21 +107,21 @@ a {
     min-width: 0;
     min-height: 100%;
   }
-  &-pre-title {
-    @include text-style(14px, var(--light-font-color));
+  &__pre-title {
+    @include text-style(0.9rem, var(--light-font-color));
     letter-spacing: 3px;
   }
-  &-title {
-    @include text-style(60px, var(--dark-font-color));
+  &__title {
+    @include text-style(3.8rem, var(--dark-font-color));
     line-height: 1.2;
   }
   &__description {
-    @include text-style(16px, var(--medium-font-color));
+    @include text-style(1rem, var(--medium-font-color));
   }
   &__button {
-    @include text-style(16px, var(--dark-font-color));
+    @include text-style(1rem, var(--dark-font-color));
   }
-  &-image {
+  &__image {
     width: auto;
     flex: 0 0 50%;
   }
@@ -140,7 +141,7 @@ a {
     padding-right: 1vw;
   }
   &__title {
-    @include text-style(32px, var(--medium-font-color));
+    @include text-style(2rem, var(--medium-font-color));
     min-width: 0;
   }
   &__info {
@@ -149,7 +150,7 @@ a {
     gap: 2vw;
   }
   &__text {
-    @include text-style(16px, var(--medium-font-color));
+    @include text-style(1rem, var(--medium-font-color));
     min-width: 0;
   }
 }
@@ -165,10 +166,10 @@ a {
     justify-content: center;
   }
   &__name {
-    @include text-style(17px, var(--dark-font-color));
+    @include text-style(1.1rem, var(--dark-font-color));
   }
   &__position {
-    @include text-style(14px, var(--light-font-color));
+    @include text-style(0.9rem, var(--light-font-color));
   }
 }
 
@@ -190,10 +191,10 @@ a {
     letter-spacing: 1px;
   }
   &__caption-title {
-    @include text-style(14px, var(--medium-font-color));
+    @include text-style(0.9rem, var(--medium-font-color));
   }
   &__caption {
-    @include text-style(16px, var(--light-font-color));
+    @include text-style(1rem, var(--light-font-color));
   }
   &__caption-container--left {
     left: 100px;
@@ -210,11 +211,11 @@ a {
     align-items: center;
   }
   &__pre-title {
-    @include text-style(14px, var(--light-font-color));
+    @include text-style(0.9rem, var(--light-font-color));
     letter-spacing: 2px;
   }
   &__title {
-    @include text-style(39px, var(--dark-font-color));
+    @include text-style(2.4rem, var(--dark-font-color));
   }
   &__steps {
     width: 70vw;
@@ -230,11 +231,12 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+
   &__title {
-    @include text-style(18px, var(--medium-font-color));
+    @include text-style(1.1rem, var(--medium-font-color));
   }
   &__description {
-    @include text-style(16px, var(--light-font-color));
+    @include text-style(1rem, var(--light-font-color));
     text-align: center;
   }
 }
@@ -254,13 +256,13 @@ a {
     justify-content: center;
   }
   &__pre-title {
-    @include text-style(14px, var(--gray-font-color));
+    @include text-style(0.9rem, var(--gray-font-color));
   }
   &__title {
-    @include text-style(32px, var(--white-font-color));
+    @include text-style(2rem, var(--white-font-color));
   }
   &__description {
-    @include text-style(14px, var(--gray-font-color));
+    @include text-style(0.9rem, var(--gray-font-color));
     margin-top: 15px;
     max-width: 80%;
   }
@@ -283,10 +285,10 @@ a {
     align-items: flex-start;
   }
   &__title {
-    @include text-style(39px, var(--dark-font-color));
+    @include text-style(2.4rem, var(--dark-font-color));
   }
   &__description {
-    @include text-style(24px, var(--medium-font-color));
+    @include text-style(1.5rem, var(--medium-font-color));
     max-width: 50%;
   }
   &__cards {
@@ -296,7 +298,7 @@ a {
     width: 100%;
   }
   &__view-all-button {
-    @include text-style(16px, var(--dark-font-color));
+    @include text-style(1rem, var(--dark-font-color));
     margin-top: 4vw;
     margin-inline: auto;
   }
@@ -335,20 +337,19 @@ a {
     transition-duration: var(--transition-duration);
   }
   &__place {
-    @include text-style(14px, var(--light-font-color));
+    @include text-style(0.9rem, var(--light-font-color));
     transition-duration: var(--transition-duration);
   }
   &__title {
-    @include text-style(23px, var(--medium-font-color));
+    @include text-style(1.5rem, var(--medium-font-color));
     transition-duration: var(--transition-duration);
   }
   &__button {
-    @include text-style(16px, var(--white-font-color));
-    height: 50px;
+    @include text-style(1rem, var(--white-font-color));
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1vw;
+    padding: .8rem 1rem;
     margin-top: auto;
     background-color: #1B1A1A;
     border-radius: 14px;
@@ -377,14 +378,14 @@ a {
     row-gap: 3vw;
   }
   &__title {
-    @include text-style(32px, var(--medium-font-color));
+    @include text-style(2rem, var(--medium-font-color));
   }
   &__description {
-    @include text-style(15px, var(--light-font-color));
+    @include text-style(1rem, var(--light-font-color));
     margin-top: 1vw;
   }
   &__button {
-    @include text-style(16px, var(--dark-font-color));
+    @include text-style(1rem, var(--dark-font-color));
     margin-top: 3vw;
     margin-left: 2vw;
   }
@@ -401,15 +402,15 @@ a {
     align-items: center;
   }
   &__pre-title {
-    @include text-style(14px, var(--light-font-color));
+    @include text-style(0.9rem, var(--light-font-color));
   }
   &__title {
-    @include text-style(40px, var(--dark-font-color));
+    @include text-style(2.5rem, var(--dark-font-color));
     margin-top: -1vw;
     max-width: 70%;
   }
   &__button {
-    @include text-style(16px, var(--dark-font-color));
+    @include text-style(1rem, var(--dark-font-color));
   }
 
 }
@@ -424,7 +425,7 @@ a {
     align-items: end;
   }
   &__description {
-    @include text-style(14px, var(--light-font-color));
+    @include text-style(0.9rem, var(--light-font-color));
     margin-top: 1.5vw;
     line-height: 1;
   }
@@ -438,5 +439,155 @@ a {
       transform: scale(var(--scale)) rotate(10deg) translateY(-3px);
     }
   }
+}
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+  .hero {
+    &__image {
+      height: 70vh;
+    }
+  }
+  .about-firm {
+    &__container {
+      width: 80vw;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    &__info {
+      flex: 1 0 60%;
+    }
+  }
+  .customers {
+    &__logo {
+      width: 10vw;
+    }
+    &__logos {
+      grid-row-gap: 1vw;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    padding-inline: 3vw;
+    &__logo {
+      width: 25%;
+    }
+  }
+  .hero {
+    &__image {
+      display: none;
+    }
+  }
+  .step {
+    &__logo {
+      width: 20vw;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    padding: 2vw 3vw;
+    &__logo {
+      display: none;
+    }
+    &__buttons-container {
+      gap: normal;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  .about-firm {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 3vw;
+      width: 90vw;
+    }
+    &__person-card {
+      margin-top: 4vw;
+    }
+  }
+  .decoration {
+    &__caption-container {
+      max-width: 70vw;
+    }
+  }
+  .person-card {
+    gap: 2vw;
+  }
+  .about-process {
+    &__steps {
+      width: 90%;
+    }
+  }
+  .step {
+    &__logo {
+      width: 15vw;
+    }
+  }
+  .customers {
+    &__logo {
+      width: 14vw;
+    }
+    &__logos {
+      grid-template: 1fr 1fr 1fr 1fr / 1fr;
+      grid-row-gap: 4vw;
+    }
+  }
+  .about-team {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__members {
+      grid-template-columns: 1fr;
+    }
+  }
+  .get-in-touch {
+    &__container {
+      flex-direction: column;
+      align-items: end;
+      gap: 2vw;
+    }
+    &__title {
+      max-width: 100%;
+    }
+  }
+  .featured-projects {
+    &__description {
+      margin-top: 2vw;
+      max-width: 100%;
+    }
+    &__cards {
+      flex-direction: column;
+      gap: 3vw;
+    }
+  }
+  .project-card {
+    max-height: 60vw;
+    overflow: clip;
+  }
+  .footer {
+    padding: 8vw 9vw;
+    &__logo {
+      width: 40vw;
+    }
+  }
+
+}
+@media (max-width: 500px) {
+  .person-card {
+    &__image {
+      width: 15vw;
+    }
+  }
 }

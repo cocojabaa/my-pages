@@ -218,6 +218,7 @@ svg * {
 html {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
+  font-size: 16px;
 }
 
 a {
@@ -258,7 +259,7 @@ a {
   align-items: center;
 }
 .header__button {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--dark-font-color);
   font-weight: 400;
 }
@@ -269,7 +270,7 @@ a {
   position: relative;
   background-color: var(--dark-font-color);
   color: white;
-  padding: 10px 15px;
+  padding: 0.8rem 1rem;
   border-radius: 14px;
   transition-duration: var(--transition-duration);
 }
@@ -283,7 +284,7 @@ a {
   display: flex;
   overflow: clip;
 }
-.hero-info {
+.hero__info {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -296,29 +297,29 @@ a {
   min-width: 0;
   min-height: 100%;
 }
-.hero-pre-title {
-  font-size: 14px;
+.hero__pre-title {
+  font-size: 0.9rem;
   color: var(--light-font-color);
   font-weight: 400;
   letter-spacing: 3px;
 }
-.hero-title {
-  font-size: 60px;
+.hero__title {
+  font-size: 3.8rem;
   color: var(--dark-font-color);
   font-weight: 400;
   line-height: 1.2;
 }
 .hero__description {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--medium-font-color);
   font-weight: 400;
 }
 .hero__button {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--dark-font-color);
   font-weight: 400;
 }
-.hero-image {
+.hero__image {
   width: auto;
   flex: 0 0 50%;
 }
@@ -337,7 +338,7 @@ a {
   padding-right: 1vw;
 }
 .about-firm__title {
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--medium-font-color);
   font-weight: 400;
   min-width: 0;
@@ -348,7 +349,7 @@ a {
   gap: 2vw;
 }
 .about-firm__text {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--medium-font-color);
   font-weight: 400;
   min-width: 0;
@@ -365,12 +366,12 @@ a {
   justify-content: center;
 }
 .person-card__name {
-  font-size: 17px;
+  font-size: 1.1rem;
   color: var(--dark-font-color);
   font-weight: 400;
 }
 .person-card__position {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--light-font-color);
   font-weight: 400;
 }
@@ -393,12 +394,12 @@ a {
   letter-spacing: 1px;
 }
 .decoration__caption-title {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--medium-font-color);
   font-weight: 400;
 }
 .decoration__caption {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--light-font-color);
   font-weight: 400;
 }
@@ -416,13 +417,13 @@ a {
   align-items: center;
 }
 .about-process__pre-title {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--light-font-color);
   font-weight: 400;
   letter-spacing: 2px;
 }
 .about-process__title {
-  font-size: 39px;
+  font-size: 2.4rem;
   color: var(--dark-font-color);
   font-weight: 400;
 }
@@ -441,12 +442,12 @@ a {
   gap: 15px;
 }
 .step__title {
-  font-size: 18px;
+  font-size: 1.1rem;
   color: var(--medium-font-color);
   font-weight: 400;
 }
 .step__description {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--light-font-color);
   font-weight: 400;
   text-align: center;
@@ -467,17 +468,17 @@ a {
   justify-content: center;
 }
 .customers__pre-title {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--gray-font-color);
   font-weight: 400;
 }
 .customers__title {
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--white-font-color);
   font-weight: 400;
 }
 .customers__description {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--gray-font-color);
   font-weight: 400;
   margin-top: 15px;
@@ -501,12 +502,12 @@ a {
   align-items: flex-start;
 }
 .featured-projects__title {
-  font-size: 39px;
+  font-size: 2.4rem;
   color: var(--dark-font-color);
   font-weight: 400;
 }
 .featured-projects__description {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--medium-font-color);
   font-weight: 400;
   max-width: 50%;
@@ -518,7 +519,7 @@ a {
   width: 100%;
 }
 .featured-projects__view-all-button {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--dark-font-color);
   font-weight: 400;
   margin-top: 4vw;
@@ -553,26 +554,25 @@ a {
   transition-duration: var(--transition-duration);
 }
 .project-card__place {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--light-font-color);
   font-weight: 400;
   transition-duration: var(--transition-duration);
 }
 .project-card__title {
-  font-size: 23px;
+  font-size: 1.5rem;
   color: var(--medium-font-color);
   font-weight: 400;
   transition-duration: var(--transition-duration);
 }
 .project-card__button {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--white-font-color);
   font-weight: 400;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vw;
+  padding: 0.8rem 1rem;
   margin-top: auto;
   background-color: #1B1A1A;
   border-radius: 14px;
@@ -599,18 +599,18 @@ a {
   row-gap: 3vw;
 }
 .about-team__title {
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--medium-font-color);
   font-weight: 400;
 }
 .about-team__description {
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--light-font-color);
   font-weight: 400;
   margin-top: 1vw;
 }
 .about-team__button {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--dark-font-color);
   font-weight: 400;
   margin-top: 3vw;
@@ -627,19 +627,19 @@ a {
   align-items: center;
 }
 .get-in-touch__pre-title {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--light-font-color);
   font-weight: 400;
 }
 .get-in-touch__title {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: var(--dark-font-color);
   font-weight: 400;
   margin-top: -1vw;
   max-width: 70%;
 }
 .get-in-touch__button {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--dark-font-color);
   font-weight: 400;
 }
@@ -654,7 +654,7 @@ a {
   align-items: end;
 }
 .footer__description {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--light-font-color);
   font-weight: 400;
   margin-top: 1.5vw;
@@ -669,6 +669,126 @@ a {
 }
 .footer__button:hover {
   transform: scale(var(--scale)) rotate(10deg) translateY(-3px);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+  .hero__image {
+    height: 70vh;
+  }
+  .about-firm__container {
+    width: 80vw;
+  }
+}
+@media (max-width: 900px) {
+  .hero__info {
+    flex: 1 0 60%;
+  }
+  .customers__logo {
+    width: 10vw;
+  }
+  .customers__logos {
+    grid-row-gap: 1vw;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    padding-inline: 3vw;
+  }
+  .header__logo {
+    width: 25%;
+  }
+  .hero__image {
+    display: none;
+  }
+  .step__logo {
+    width: 20vw;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    padding: 2vw 3vw;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__buttons-container {
+    gap: normal;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .about-firm__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 90vw;
+  }
+  .about-firm__person-card {
+    margin-top: 4vw;
+  }
+  .decoration__caption-container {
+    max-width: 70vw;
+  }
+  .person-card {
+    gap: 2vw;
+  }
+  .about-process__steps {
+    width: 90%;
+  }
+  .step__logo {
+    width: 15vw;
+  }
+  .customers__logo {
+    width: 14vw;
+  }
+  .customers__logos {
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+    grid-row-gap: 4vw;
+  }
+  .about-team__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-team__members {
+    grid-template-columns: 1fr;
+  }
+  .get-in-touch__container {
+    flex-direction: column;
+    align-items: end;
+    gap: 2vw;
+  }
+  .get-in-touch__title {
+    max-width: 100%;
+  }
+  .featured-projects__description {
+    margin-top: 2vw;
+    max-width: 100%;
+  }
+  .featured-projects__cards {
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .project-card {
+    max-height: 60vw;
+    overflow: clip;
+  }
+  .footer {
+    padding: 8vw 9vw;
+  }
+  .footer__logo {
+    width: 40vw;
+  }
+}
+@media (max-width: 500px) {
+  .person-card__image {
+    width: 15vw;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
