@@ -4,4 +4,7 @@
 ---
 ### Wishbone (scss, html, адаптив в процессе)
 Макет figma: https://verstaem.online/projects/wishbone/
-![wishbone screenshot](./screenshots/Wishbone.png)
+
+<img src="./screenshots/Wishbone.png" alt="Скрин" width="70%" style="display: inline-block; margin-right: 5%;">
+<img src="./screenshots/Wishbone mobile.png" alt="Скрин" width="17.5%" style="display: inline-block;">
+
