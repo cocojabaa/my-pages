@@ -5,7 +5,7 @@
 
 ---
 
-### FromBoard Delivery (scss, js, адаптив)
+### FromBoard Delivery (scss, js, адаптив) в разработке...
 Макет figma: https://verstaem.online/projects/fromboard-delivery/
 
 
