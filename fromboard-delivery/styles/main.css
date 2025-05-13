@@ -201,28 +201,28 @@ svg * {
 }
 @font-face {
   font-family: "Formular";
-  src: url("../../assets/fonts/formular/formular-black.woff2") format("woff2");
+  src: url("../assets/fonts/formular/formular-black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Formular";
-  src: url("../../assets/fonts/formular/formular-bold.woff2") format("woff2");
+  src: url("../assets/fonts/formular/formular-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Formular";
-  src: url("../../assets/fonts/formular/formular-regular.woff2") format("woff2");
+  src: url("../assets/fonts/formular/formular-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Formular";
-  src: url("../../assets/fonts/formular/formular-light.woff2") format("woff2");
+  src: url("../assets/fonts/formular/formular-light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
