@@ -1,0 +1,40 @@
+@use "../base/mixins" as *;
+
+.calculator {
+  background-color: var(--gray200);
+  padding-inline: var(--page-inline-padding);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray50);
+    border-radius: 20px;
+    padding-top: 1.4rem;
+    padding-bottom: 2rem;
+  }
+  &__title {
+    @include text-style(1.9rem, var(--gray900), 700);
+  }
+  &__after-title {
+    @include text-style(1rem, var(--gray900), 400);
+
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 1fr;
+    width: 50%;
+    grid-gap: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  &__name-input {
+    grid-column: 1/-1;
+  }
+  &__button {
+    grid-column: 1/-1;
+  }
+}

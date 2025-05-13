@@ -1,0 +1,15 @@
+@use "../base/mixins" as *;
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__title {
+    @include text-style(1.5rem, var(--gray900), 900)
+  }
+
+  &__logo {
+    color: var(--purple400);
+  }
+}

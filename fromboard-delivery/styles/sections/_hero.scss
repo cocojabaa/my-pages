@@ -1,0 +1,34 @@
+@use "../base/mixins" as *;
+
+.hero {
+  background-color: var(--gray200);
+  padding: 2vw var(--page-inline-padding);
+
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4vw;
+  }
+
+  &__info-container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  &__title {
+    @include text-style(1.9rem, var(--gray900), 700);
+    line-height: 1.2;
+    text-align: start;
+  }
+  &__text {
+    @include text-style(1.2rem, var(--gray900), 400);
+    text-align: start;
+  }
+
+  &__image {
+    grid-column: 2;
+  }
+}

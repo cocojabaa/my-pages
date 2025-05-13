@@ -1,0 +1,64 @@
+@use "../base/mixins" as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-inline: var(--page-inline-padding);
+  background-color: var(--light-background-color);
+}
+
+.header-top {
+  padding-block: 0.7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__info-container {
+    display: flex;
+  }
+
+  &__info-text {
+    border-right: solid 1px var(--purple500);
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+      @include text-style(1rem, var(--gray900));
+      text-align: end;
+      margin: 0;
+    }
+  }
+
+  &__phone-number-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+  }
+  &__phone-number {
+    @include text-style(2.2rem, var(--gray900), 900);
+  }
+  &__after-phone-number {
+    @include text-style(1.5rem, var(--gray900));
+  }
+}
+
+.header-bottom {
+  padding-block: 0.7vw;
+  display: flex;
+  justify-content: space-between;
+
+  &__nav-container {
+    display: flex;
+    gap: 1vw;
+  }
+
+  &__nav-button {
+    @include text-style(1rem, var(--gray900), 700);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
