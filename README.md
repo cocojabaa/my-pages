@@ -8,6 +8,8 @@
 ### FromBoard Delivery (scss, js, адаптив) в разработке...
 Макет figma: https://verstaem.online/projects/fromboard-delivery/
 
+![Скрин](./screenshots/fromboard-delivery.png)
+
 
 
 ---
@@ -15,4 +17,4 @@
 ### Wishbone (scss, адаптив)
 Макет figma: https://verstaem.online/projects/wishbone/
 
-![Скрин](./screenshots/Wishbone.png)
+![Скрин](./screenshots/wishbone.png)

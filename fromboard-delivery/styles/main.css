@@ -225,6 +225,7 @@ svg * {
   --gray50: #F9FAFB;
   --gray200: #E5E7EB;
   --gray900: #111827;
+  --transition-duration: 0.2s;
   --page-inline-padding: 12vw;
 }
 
@@ -243,6 +244,13 @@ body {
   height: 3rem;
   padding-inline: 2rem;
   cursor: pointer;
+  transition-duration: var(--transition-duration);
+}
+.button:hover {
+  background: var(--purple400);
+}
+.button:active {
+  background: var(--purple700);
 }
 
 .brand {
@@ -265,6 +273,8 @@ body {
   padding-inline: 1rem;
   border: solid 2px var(--gray900);
   border-radius: 4px;
+  transition-duration: var(--transition-duration);
+  font-size: 1rem;
 }
 .text-input input:focus {
   outline: none;

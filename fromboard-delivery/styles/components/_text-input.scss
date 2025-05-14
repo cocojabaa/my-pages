@@ -5,6 +5,8 @@
     padding-inline: 1rem;
     border: solid 2px var(--gray900);
     border-radius: 4px;
+    transition-duration: var(--transition-duration);
+    font-size: 1rem;
   }
   input:focus {
     outline: none;
