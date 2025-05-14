@@ -11,7 +11,7 @@
     background-color: var(--gray50);
     border-radius: 20px;
     padding-top: 1.4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
   }
   &__title {
     @include text-style(1.9rem, var(--gray900), 700);
@@ -25,7 +25,7 @@
 
   &__form {
     display: grid;
-    grid-template: repeat(5, 1fr) / 1fr 1fr;
+    grid-template: repeat(6, 1fr) / 1fr 1fr;
     width: 50%;
     grid-gap: 1.6rem;
     margin-top: 2rem;

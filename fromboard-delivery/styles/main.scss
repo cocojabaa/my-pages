@@ -9,9 +9,11 @@
 @use "./components/button";
 @use "./components/brand";
 @use "./components/text-input";
+@use "./components/advantage";
 
 // sections
 @use "sections/header";
 @use "sections/hero";
 @use "sections/calculator";
 @use "sections/advantages";
+@use "sections/guarantees";
